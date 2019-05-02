@@ -1,0 +1,1 @@
+scalac -classpath E:\Learn\Scala\target\scala-2.12\classes -bootclasspath C:\Users\rmaddy\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.8.jar E:\Learn\Scala\src\main\scala\curried_product.scala E:\Learn\Scala\src\main\scala\mapReduce.scala

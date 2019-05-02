@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0mE:\Learn\Scala\src\main\scala\curried_sum.scala:11:18: imported `factorial' is permanently hidden by definition of object factorial[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport factorial.factorial[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
