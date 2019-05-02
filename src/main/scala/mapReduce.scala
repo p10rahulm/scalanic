@@ -13,6 +13,23 @@
     scala> mapReduce(factorial.factorial,(x,y)=>x+y,0)(1,4)
     res2: Int = 33
 
+    scala> def sumfact = mapReduce(factorial.factorial,(x,y)=>x+y,0)(_,_)
+    sumfact: (Int, Int) => Int
+
+    scala> sumfact(1,3)
+    res3: Int = 9
+
+    Properly currying now
+
+    scala> def fact = mapReduce(x=>x,(x,y)=>x*y,1)(1,_)
+    fact: Int => Int
+
+    scala> fact(4)
+    res5: Int = 24
+
+    scala> fact(6)
+    res6: Int = 720
+
 
 
  */
