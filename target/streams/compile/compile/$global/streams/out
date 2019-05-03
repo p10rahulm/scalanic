@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\Rational.scala:35:11: expected start of definition[0m
-[0m[[0m[31merror[0m] [0m[0m  private gcd[0m
-[0m[[0m[31merror[0m] [0m[0m          ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mE:\Learn\Scala\src\main\scala\sumfactorial.scala:14:18: imported `factorial' is permanently hidden by definition of object factorial[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport factorial.factorial[0m
+[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
