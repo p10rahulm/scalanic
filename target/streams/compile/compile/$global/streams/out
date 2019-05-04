@@ -18,10 +18,4 @@
 [0m[[0m[31merror[0m] [0m[0m required: Boolean (in idealized.scala) [0m
 [0m[[0m[31merror[0m] [0m[0m  def unary_! : Boolean = ifthenelse(false,true)[0m
 [0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\tweetSet.scala:269:37: not found: value TweetReader[0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val googleTweets: TweetSet = TweetReader.allTweets.mentions(google)[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\tweetSet.scala:270:36: not found: value TweetReader[0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val appleTweets: TweetSet = TweetReader.allTweets.mentions(apple)[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
