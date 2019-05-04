@@ -1,4 +1,27 @@
-[0m[[0m[33mwarn[0m] [0m[0mE:\Learn\Scala\src\main\scala\sumfactorial.scala:14:18: imported `factorial' is permanently hidden by definition of object factorial[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport factorial.factorial[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\Bool.scala:8:48: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean (in scala) [0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean (in idealized.scala) [0m
+[0m[[0m[31merror[0m] [0m[0m  def &&(B: => Boolean):Boolean = ifthenelse(B,false)[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\Bool.scala:11:46: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean (in scala) [0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean (in idealized.scala) [0m
+[0m[[0m[31merror[0m] [0m[0m  def ||(B: => Boolean):Boolean = ifthenelse(true,B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\Bool.scala:14:38: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean (in scala) [0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean (in idealized.scala) [0m
+[0m[[0m[31merror[0m] [0m[0m  def unary_! : Boolean = ifthenelse(false,true)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\Bool.scala:14:44: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Boolean (in scala) [0m
+[0m[[0m[31merror[0m] [0m[0m required: Boolean (in idealized.scala) [0m
+[0m[[0m[31merror[0m] [0m[0m  def unary_! : Boolean = ifthenelse(false,true)[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\tweetSet.scala:269:37: not found: value TweetReader[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val googleTweets: TweetSet = TweetReader.allTweets.mentions(google)[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\tweetSet.scala:270:36: not found: value TweetReader[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val appleTweets: TweetSet = TweetReader.allTweets.mentions(apple)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
