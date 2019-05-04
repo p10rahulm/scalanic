@@ -25,5 +25,9 @@ abstract class Bool {
 
   def !=(x:Bool):Bool = ifthenelse(x.unary_!,x)
 
+  def < (x:Bool):Bool = ifthenelse(fal,x)
+  def > (x:Bool):Bool = ifthenelse(x.unary_!,fal)
+  def <= (x:Bool):Bool = ifthenelse(x,tru)
+  def >= (x:Bool):Bool = ifthenelse(tru,x.unary_!)
 }
 
