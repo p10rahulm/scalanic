@@ -27,64 +27,92 @@
  *
  *
  */
-object ConsList {
-  trait List[T]{
-    def isEmpty:Boolean
-    def head:T
-    def tail: List[T]
-  }
-  class cons[T](val head: T, val tail: List[T] ) extends List[T] {
-    override def isEmpty: Boolean = false
-    /*    The below are not required because we have already defined val in the arguments list
-    *     val is a special case of a def or function definition
-    *     def head:T = head
-    *     def tail:List[T] = tail
-    */
-  }
 
-  class nil[T] extends List[T]{
-    override def isEmpty: Boolean = true
-    def head:Nothing = throw new NoSuchElementException("This is a nil element with no head")
-    def tail:Nothing = throw new NoSuchElementException("This is a nil element with no tail")
-  }
+trait List[T] {
+  def isEmpty: Boolean
 
-  // we can use a method like the below to create a list
-  def singleton[T](elem:T):List[T] = {
-    new cons[T](elem,new nil[T])
-  }
-  /*
-  * Write a function nth that takes an integer n and a list and selects the n'th element of the list.
-  * Elements are numbered from 0.
-  * If index is outside the range from 0 up to the length of the list minus one, a IndexOutOfBoundsException should be thrown.
-  *
-  * scala> val a = new cons[Int](1,new nil[Int])
-    a: ConsList.cons[Int] = ConsList$cons@11bd984d
+  def head: T
 
-    scala> val b = new cons[Int](2,a)
-    b: ConsList.cons[Int] = ConsList$cons@1af29814
-
-    scala> val c = new cons[Int](3,b)
-    c: ConsList.cons[Int] = ConsList$cons@46f78f67
-
-  * scala> nth(0,c)
-    res6: Int = 3
-
-    scala> nth(1,c)
-    res7: Int = 2
-
-    scala> nth(2,c)
-    res8: Int = 1
-  *
-  *
-  */
-  def nth[T](n:Integer,mylist:List[T]):T = {
-    def loop[T](current:Integer,mylist:List[T]):T = {
-      if(mylist.isEmpty || n < 0) throw new IndexOutOfBoundsException("Please check the index")
-      else if(current==0) mylist.head
-      else
-        loop(current-1,mylist.tail)
-    }
-    loop(n,mylist)
-
-  }
+  def tail: List[T]
 }
+
+class cons[T](val head: T, val tail: List[T]) extends List[T] {
+  override def isEmpty: Boolean = false
+
+  /*    The below are not required because we have already defined val in the arguments list
+  *     val is a special case of a def or function definition
+  *     def head:T = head
+  *     def tail:List[T] = tail
+  */
+}
+
+class nil[T] extends List[T] {
+  override def isEmpty: Boolean = true
+
+  def head: Nothing = throw new NoSuchElementException("This is a nil element with no head")
+
+  def tail: Nothing = throw new NoSuchElementException("This is a nil element with no tail")
+}
+
+// we can use a method like the below to create a list
+def singleton[T](elem: T): List[T] = {
+  new cons[T](elem, new nil[T])
+}
+/*
+* Write a function nth that takes an integer n and a list and selects the n'th element of the list.
+* Elements are numbered from 0.
+* If index is outside the range from 0 up to the length of the list minus one, a IndexOutOfBoundsException should be thrown.
+*
+* scala> val a = new cons[Int](1,new nil[Int])
+  a: ConsList.cons[Int] = ConsList$cons@11bd984d
+
+  scala> val b = new cons[Int](2,a)
+  b: ConsList.cons[Int] = ConsList$cons@1af29814
+
+  scala> val c = new cons[Int](3,b)
+  c: ConsList.cons[Int] = ConsList$cons@46f78f67
+
+* scala> nth(0,c)
+  res6: Int = 3
+
+  scala> nth(1,c)
+  res7: Int = 2
+
+  scala> nth(2,c)
+  res8: Int = 1
+*
+*
+*/
+def nth[T](n: Integer, mylist: List[T]): T = {
+  def loop[T](current: Integer, mylist: List[T]): T = {
+    if (mylist.isEmpty || n < 0) throw new IndexOutOfBoundsException("Please check the index")
+    else if (current == 0) mylist.head
+    else
+      loop(current - 1, mylist.tail)
+  }
+
+  loop(n, mylist)
+
+}
+
+object List {
+  /*
+  List(1,2) = List.apply(1,2)
+  */
+
+  def apply[T](x:T,y:T): List[T] = new Cons(x, new Cons(y, new nil))
+
+  /*
+  List(1) = List.apply(1)
+  */
+
+  def apply[T](x:T): List[T] = new Cons(x, new nil)
+
+  /*
+  List() = List.apply()
+  */
+
+  def apply[T](): List[T] = new nil
+
+}
+
