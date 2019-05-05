@@ -1,8 +1,10 @@
-package patmat
-
 
 /**
-  * Assignment 4: Huffman coding
+  * scala> import Huffman._
+  * import Huffman._
+  *
+  * scala> decodedSecret
+  * res0: List[Char] = List(h, u, f, f, m, a, n, e, s, t, c, o, o, l)
   *
   */
 object Huffman {
@@ -330,8 +332,3 @@ object Huffman {
       codeBits(convert(tree))(text.head) ::: quickEncode(tree)(text.tail)
   }
 }
-
-/*
- *  > sbt test to run tests
- *
-*/
