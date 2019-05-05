@@ -86,11 +86,11 @@ abstract class TweetSet {
       if(current.isEmpty) acc
       else {
         val most_rt = current.mostRetweeted
-        new Cons(current.mostRetweeted,loop(current.remove(most_rt),acc))
+        new TweetCons(current.mostRetweeted,loop(current.remove(most_rt),acc))
       }
 
     }
-    loop(this,Nil)
+    loop(this,TweetNil)
   }
 
   def mentions(keywords: List[String]): TweetSet = filter(x => x.mentions(keywords))
@@ -251,13 +251,13 @@ trait TweetList {
     }
 }
 
-object Nil extends TweetList {
+object TweetNil extends TweetList {
   def head = throw new java.util.NoSuchElementException("head of EmptyList")
   def tail = throw new java.util.NoSuchElementException("tail of EmptyList")
   def isEmpty = true
 }
 
-class Cons(val head: Tweet, val tail: TweetList) extends TweetList {
+class TweetCons(val head: Tweet, val tail: TweetList) extends TweetList {
   def isEmpty = false
 }
 

@@ -12,7 +12,7 @@
  *   scala> import ConsList._
      import ConsList._
 
-     scala> val a = new cons[Int](1,new mynil[Int])
+     scala> val a = new cons[Int](1,new nil[Int])
      a: ConsList.cons[Int] = ConsList$cons@719d868
 
      scala> val b = new cons[Int](2,a)
@@ -28,36 +28,36 @@
  *
  */
 
-trait MyList[T] {
+trait ConsList[T] {
   def isEmpty: Boolean
 
   def head: T
 
-  def tail: MyList[T]
+  def tail: ConsList[T]
 }
 
-class mycons[T](val head: T, val tail: MyList[T]) extends MyList[T] {
+class cons[T](val head: T, val tail: ConsList[T]) extends ConsList[T] {
   override def isEmpty: Boolean = false
 
   /*    The below are not required because we have already defined val in the arguments list
   *     val is a special case of a def or function definition
   *     def head:T = head
-  *     def tail:MyList[T] = tail
+  *     def tail:ConsList[T] = tail
   */
 }
 
-class mynil[T] extends MyList[T] {
+class nil[T] extends ConsList[T] {
   override def isEmpty: Boolean = true
 
-  def head: Nothing = throw new NoSuchElementException("This is a mynil element with no head")
+  def head: Nothing = throw new NoSuchElementException("This is a nil element with no head")
 
-  def tail: Nothing = throw new NoSuchElementException("This is a mynil element with no tail")
+  def tail: Nothing = throw new NoSuchElementException("This is a nil element with no tail")
 }
 
-object MyListOperations {
+object ConsListOperations {
   // we can use a method like the below to create a list
-  def singleton[T](elem: T): MyList[T] = {
-    new mycons[T](elem, new mynil[T])
+  def singleton[T](elem: T): ConsList[T] = {
+    new cons[T](elem, new nil[T])
   }
 
   /*
@@ -65,14 +65,14 @@ object MyListOperations {
   * Elements are numbered from 0.
   * If index is outside the range from 0 up to the length of the list minus one, a IndexOutOfBoundsException should be thrown.
   *
-  * scala> val a = new mycons[Int](1,new mynil[Int])
-    a: ConsList.mycons[Int] = ConsList@11bd984d
+  * scala> val a = new cons[Int](1,new nil[Int])
+    a: ConsConsList.cons[Int] = ConsConsList@11bd984d
 
-    scala> val b = new mycons[Int](2,a)
-    b: ConsList.mycons[Int] = ConsList$mycons@1af29814
+    scala> val b = new cons[Int](2,a)
+    b: ConsConsList.cons[Int] = ConsConsList$cons@1af29814
 
-    scala> val c = new mycons[Int](3,b)
-    c: ConsList.mycons[Int] = ConsList$mycons@46f78f67
+    scala> val c = new cons[Int](3,b)
+    c: ConsConsList.cons[Int] = ConsConsList$cons@46f78f67
 
   * scala> nth(0,c)
     res6: Int = 3
@@ -85,8 +85,8 @@ object MyListOperations {
   *
   *
   */
-  def nth[T](n: Integer, mylist: MyList[T]): T = {
-    def loop[T](current: Integer, mylist: MyList[T]): T = {
+  def nth[T](n: Integer, mylist: ConsList[T]): T = {
+    def loop[T](current: Integer, mylist: ConsList[T]): T = {
       if (mylist.isEmpty || n < 0) throw new IndexOutOfBoundsException("Please check the index")
       else if (current == 0) mylist.head
       else
@@ -98,24 +98,24 @@ object MyListOperations {
   }
 }
 
-object MyList {
+object ConsList {
   /*
-  MyList(1,2) = MyList.apply(1,2)
+  ConsList(1,2) = ConsList.apply(1,2)
   */
 
-  def apply[T](x:T,y:T): MyList[T] = new mycons(x, new mycons(y, new mynil))
+  def apply[T](x:T,y:T): ConsList[T] = new cons(x, new cons(y, new nil))
 
   /*
-  MyList(1) = MyList.apply(1)
+  ConsList(1) = ConsList.apply(1)
   */
 
-  def apply[T](x:T): MyList[T] = new mycons(x, new mynil)
+  def apply[T](x:T): ConsList[T] = new cons(x, new nil)
 
   /*
-  MyList() = MyList.apply()
+  ConsList() = ConsList.apply()
   */
 
-  def apply[T](): MyList[T] = new mynil
+  def apply[T](): ConsList[T] = new nil
 
 }
 
