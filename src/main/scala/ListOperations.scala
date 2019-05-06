@@ -250,4 +250,99 @@ object ListOperations {
   res0: List[(String, Int)] = List((a,3), (b,1), (c,2), (a,1))
 
    */
+
+  /*
+  *
+  * def sum(xs:List[Int]) and def product(xs:List[Int]) produce the sum and product respectively of all the elements in the list.
+  * Now we try to implement these
+  *
+   */
+  def sum(xs:List[Int]): Int = xs match {
+    case Nil => 0
+    case head::tail => head + sum(tail)
+  }
+  def product(xs:List[Int]): Int = xs match {
+    case Nil => 1
+    case head::tail => head * product(tail)
+  }
+
+  def sum2(xs: List[Int])     = (0 :: xs) reduceLeft ((x,y) => x + y)
+  def product2(xs: List[Int]) = (1 :: xs) reduceLeft ((x,y) => x * y)
+
+  def reduceRight[T](xs:List[T],f:(T, T) => T):T = xs match {
+    case List(x) => x
+    case y::ys => f(y,reduceRight[T](ys,f))
+  }
+
+  //foldRight unlike reduceRight takes into account an accumulator, which is z below
+
+  def foldRight[T,U](xs:List[T],z: U)(op: (T,U) => U): U = xs match {
+    case Nil => z
+    case y :: ys => op(y,foldRight(ys,z)(op))
+  }
+  /*
+    *
+    * scala> import ListOperations._
+      import ListOperations._
+
+      scala> reduceRight(List(1,3,5),(x:Int,y:Int)=>x*y)
+      res0: Int = 15
+    *
+    * scala> foldRight(List(1,3,5),0)((x:Int,y:Int)=>x*y)
+      res1: Int = 0
+
+      scala> foldRight(List(1,3,5),1)((x:Int,y:Int)=>x*y)
+      res2: Int = 15
+
+
+  */
+
+  /*
+   *
+   *  FoldLeft (fold from left)
+      The function reduceLeft is defined in terms of a more general function, foldLeft. It's like reduceLeft, but it takes an accumulator, or zero-element z, which is returned when foldLeft is called on an empty list.
+
+      (List(x1, ..., xn) foldLeft z)(op) = (...(z op x1) op ...) op xn
+      So,
+
+      def	sum(xs: List[Int]) = (xs foldLeft 0) (_ + _)
+      def product(xs: List[Int]) = (xs foldLeft 1) (_ * _)
+
+      abstract class List[T] { ...
+        def reduceLeft(op: (T, T) => T): T = this match {
+          case Nil => throw new Error("Nil.reduceLeft")
+          case x :: xs => (xs foldLeft x)(op)
+        }
+        def foldLeft[U](z: U)(op: (U,T) => U): U = this match {
+          case Nil => z
+          case x :: xs => (xs foldLeft op(z, x))(op)
+        }
+      }
+
+   */
+
+  def reduceLeft[T](xs:List[T],op: (T, T) => T):T = xs match {
+    case Nil => throw new Error("Nil.reduceLeft")
+    case y :: ys => foldLeft(ys,y)(op)
+  }
+  def foldLeft[T,U](xs:List[T],z: U)(op: (U,T) => U): U = xs match {
+    case Nil => z
+    case y :: ys => foldLeft(ys , op(z, y))(op)
+  }
+  /*
+   *
+   *  scala> import ListOperations._
+      import ListOperations._
+
+   *  scala> reduceLeft( List(1,2,3),(x:Int,y:Int) => x*y)
+      res7: Int = 6
+
+      scala> reduceLeft( List(1.0,2.0,3.0),(x:Double,y:Double) => x*y)
+      res10: Double = 6.
+   *
+   *  scala> foldLeft(List(1,3,5),1)((x:Int,y:Int)=>x*y)
+      res3: Int = 15
+
+
+   */
 }

@@ -1,6 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\ListOperations.scala:239:17: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : List[(T, Int)][0m
-[0m[[0m[31merror[0m] [0m[0m required: List[List[T]][0m
-[0m[[0m[31merror[0m] [0m[0m    give_output(packed)[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\ListOperations.scala:281:24: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : y.type (with underlying type T)[0m
+[0m[[0m[31merror[0m] [0m[0m required: U[0m
+[0m[[0m[31merror[0m] [0m[0m    case y :: ys => op(y,foldRight(ys,z)(op))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\ListOperations.scala:281:35: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : U[0m
+[0m[[0m[31merror[0m] [0m[0m required: T[0m
+[0m[[0m[31merror[0m] [0m[0m    case y :: ys => op(y,foldRight(ys,z)(op))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

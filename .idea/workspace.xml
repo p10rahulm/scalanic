@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be241765-877d-4041-9232-917601bfdd36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/merge_sort.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ListOperations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ListOperations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ListOperations$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ListOperations$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ListOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ListOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/console/$global/streams/out" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ListOperations.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="246" column="2" selection-start-line="246" selection-start-column="2" selection-end-line="250" />
+            <state relative-caret-position="278">
+              <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -181,8 +172,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+    <option name="x" value="420" />
+    <option name="y" value="100" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -228,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557055261668" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557121916410" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../patmat/build.sbt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -309,16 +300,15 @@
       <workItem from="1556763345781" duration="728000" />
       <workItem from="1556764123695" duration="28815000" />
       <workItem from="1556851529148" duration="6374000" />
-      <workItem from="1556861501443" duration="28354000" />
+      <workItem from="1556861501443" duration="36789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64271000" />
+    <option name="totallyTimeSpent" value="72706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23489933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -597,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ListOperations.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="246" column="2" selection-start-line="246" selection-start-column="2" selection-end-line="250" />
+        <state relative-caret-position="278">
+          <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
         </state>
       </provider>
     </entry>
