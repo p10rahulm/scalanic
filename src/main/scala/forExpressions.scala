@@ -34,22 +34,32 @@ object forExpressions {
     *
 
    */
-  def isPrime(n:Int): Boolean = {
-    (2 to n-1).forall(x => n%x !=0)
-  }
-  def forloop_i_to_n(n:Int)(f:(Int,Int)=>Boolean) = {
-    ((1 until n).flatMap(i => (1 until i).map(j => (i,j))) ).filter(pair => f(pair._1,pair._2))
-  }
-  def primepairs(n:Int) = {
-    forloop_i_to_n(n)((x:Int,y:Int) => isPrime(x+y))
+  def isPrime(n: Int): Boolean = {
+    (2 to n - 1).forall(x => n % x != 0)
   }
 
-  def primepairs2(n:Int) = {
+  def forloop_i_to_n(n: Int)(f: (Int, Int) => Boolean) = {
+    ((1 until n).flatMap(i => (1 until i).map(j => (i, j)))).filter(pair => f(pair._1, pair._2))
+  }
+
+  def primepairs(n: Int) = {
+    forloop_i_to_n(n)((x: Int, y: Int) => isPrime(x + y))
+  }
+
+  def primepairs2(n: Int) = {
     for {
       i <- 1 until n
       j <- 1 until i
-      if(isPrime(i+j))
-    } yield (i,j)
+      if (isPrime(i + j))
+    } yield (i, j)
+  }
+
+  def scalarProduct3(xs: List[Double], ys: List[Double]): Double = {
+    (
+      for {
+        (x, y) <- xs.zip(ys)
+      } yield x * y
+      ).sum
   }
 
   /*
@@ -70,8 +80,12 @@ object forExpressions {
 
     *
     *
+    * scala> scalarProduct3(List(1,2,3),List(4,5,6))
+      res0: Double = 32.0
+
     *
    */
+
 
 
 }
