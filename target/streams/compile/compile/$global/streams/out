@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\nqueens.scala:59:16: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Set[List[Int]][0m
-[0m[[0m[31merror[0m] [0m[0m required: List[Int][0m
-[0m[[0m[31merror[0m] [0m[0m    placeQueens(n)[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\anagrams.scala:9:7: not found: value common[0m
+[0m[[0m[31merror[0m] [0m[0m      common.resourceAsStreamFromSrc(dictionaryPath)[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
