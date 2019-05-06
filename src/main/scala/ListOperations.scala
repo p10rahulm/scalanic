@@ -345,4 +345,67 @@ object ListOperations {
 
 
    */
+
+  def concatenate[T](xs: List[T], ys: List[T]):List[T] = xs match {
+    case Nil => ys
+    case x :: Nil => x :: ys
+    case z :: zs => z :: foldRight(zs,ys)((x,y)=> x :: y)
+  }
+  /*
+   *  scala> import ListOperations._
+   *
+   *  scala> concatenate(List(1,2,3),List(4,5,6))
+      res1: List[Int] = List(1, 2, 3, 4, 5, 6)
+
+      scala> concatenate(List(1,2,3),List(4,5,'a'))
+      res2: List[Int] = List(1, 2, 3, 4, 5, 97)
+
+      scala> concatenate(List(1,2,7),List(4,5,'a'))
+      res3: List[Int] = List(1, 2, 7, 4, 5, 97)
+   *
+   *  Note what happens for different types of lists
+   *
+   *  scala> concatenate(List('c',2,7),List('b','b','a'))
+      res4: List[AnyVal] = List(99, 2, 7, b, b, a)
+
+      scala> concatenate(List('c','s','p'),List('b','b','a'))
+      res5: List[Char] = List(c, s, p, b, b, a)
+
+   */
+  def lengthFun[T](xs: List[T]): Int = foldRight(xs,0)((x,y)=> 1+y)
+  /*
+    *
+    *   scala> import ListOperations._
+        import ListOperations._
+
+        scala> lengthFun(List(1,2,3,4.5))
+        res1: Int = 4
+
+        scala> lengthFun(List(1,2,3,4,5))
+        res2: Int = 5
+
+    *
+   */
+
+  def mapFun[T, U](xs: List[T], f: T => U): List[U] = foldRight(xs,List[U]())((x,y) => ( f(x) :: y ) )
+  /*
+    * scala> import ListOperations._
+      import ListOperations._
+    *
+    * scala> mapFun[Int,Int](List(1,2,3,4,5),x => x + 2)
+      res1: List[Int] = List(3, 4, 5, 6, 7)
+
+    * scala> mapFun[Int,String](List(1,2,3,4,5),x => x + "2")
+      res3: List[String] = List(12, 22, 32, 42, 52)
+
+      scala> mapFun[Int,String](List(1,2,3,4,5),x => x + "some String")
+      res4: List[String] = List(1some String, 2some String, 3some String, 4some String, 5some String)
+
+      scala> mapFun[Int,String](List(1,2,3,4,5),x => x + " some String")
+      res5: List[String] = List(1 some String, 2 some String, 3 some String, 4 some String, 5 some String)
+
+    *
+   */
+
+
 }
