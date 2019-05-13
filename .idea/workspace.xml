@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be241765-877d-4041-9232-917601bfdd36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streams_bloxorz/Bloxorz.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streams_bloxorz/GameDef.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streams_bloxorz/InfiniteTerrain.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streams_bloxorz/Solver.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/streams_bloxorz/StringParserTerrain.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Heap.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,49 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/nqueens.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4369">
+            <state relative-caret-position="360">
               <caret line="257" selection-start-line="257" selection-end-line="257" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/polynomial_maps.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/forExpressions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/WaterPouringProblem.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-566">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/streams_bloxorz/Solver.scala">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/streams_bloxorz/Bloxorz.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Heap.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -151,6 +115,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/anagrams.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/WaterPouringProblem.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streams_bloxorz/Solver.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/streams_bloxorz/BloxorzSuite.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Heap.scala" />
       </list>
     </option>
   </component>
@@ -167,6 +133,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,19 +171,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557597196014" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../streams/build.sbt" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557768519232" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quickcheck/build.sbt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="streams_bloxorz" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Learn\Scala\src\main\scala" />
     </key>
@@ -298,17 +267,19 @@
       <workItem from="1556851529148" duration="6374000" />
       <workItem from="1556861501443" duration="59897000" />
       <workItem from="1557493414719" duration="568000" />
-      <workItem from="1557539386623" duration="3110000" />
+      <workItem from="1557539386623" duration="3769000" />
+      <workItem from="1557744551713" duration="1320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99492000" />
+    <option name="totallyTimeSpent" value="101471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.24161074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49773756" visible="true" weight="0.24496645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -604,20 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/list_functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/nqueens.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4369">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/polynomial_maps.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -646,6 +603,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/streams_bloxorz/BloxorzSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/list_functions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/nqueens.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Heap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
