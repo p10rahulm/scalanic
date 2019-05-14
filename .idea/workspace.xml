@@ -42,13 +42,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Heap.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret lean-forward="true" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Polynomial.scala">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/TweetLength.scala">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Signal.scala">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Calculator.scala">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -116,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/streams_bloxorz/Solver.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/streams_bloxorz/BloxorzSuite.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Heap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Calculator.scala" />
       </list>
     </option>
   </component>
@@ -175,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557772128150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557772319210" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../calculator/build.sbt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -267,12 +288,12 @@
       <workItem from="1556861501443" duration="59897000" />
       <workItem from="1557493414719" duration="568000" />
       <workItem from="1557539386623" duration="3769000" />
-      <workItem from="1557744551713" duration="1981000" />
+      <workItem from="1557744551713" duration="2039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102132000" />
+    <option name="totallyTimeSpent" value="102190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -631,6 +652,18 @@
           <caret lean-forward="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Polynomial.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TweetLength.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Signal.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Calculator.scala">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
