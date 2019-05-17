@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\anagrams.scala:9:7: not found: value common[0m
-[0m[[0m[31merror[0m] [0m[0m      common.resourceAsStreamFromSrc(dictionaryPath)[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\streams_bloxorz\GameDef.scala:3:8: not found: object common[0m
+[0m[[0m[31merror[0m] [0m[0mimport common._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\streams_bloxorz\Solver.scala:3:8: not found: object common[0m
+[0m[[0m[31merror[0m] [0m[0mimport common._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\streams_bloxorz\StringParserTerrain.scala:3:8: not found: object common[0m
+[0m[[0m[31merror[0m] [0m[0mimport common._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

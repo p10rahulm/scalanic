@@ -1,7 +1,5 @@
 package streams_bloxorz
 
-import common._
-
 /**
  * This component implements the solver for the Bloxorz game
  */

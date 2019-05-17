@@ -1,6 +1,5 @@
 package streams_bloxorz
 
-import common._
 
 /**
  * This component implements a parser to define terrains from a
