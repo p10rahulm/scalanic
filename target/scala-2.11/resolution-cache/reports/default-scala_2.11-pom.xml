@@ -4,10 +4,10 @@
 	<info
 		organisation="default"
 		module="scala_2.11"
-		revision="1.2.8"
+		revision="0.1"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190517103341"/>
+		date="20190517120601"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

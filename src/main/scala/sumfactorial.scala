@@ -11,7 +11,7 @@
 
 
  */
-import factorial.factorial
+import factorial._
 object sumfactorial {
   def sumfact(a:Int,b:Int):Int = {
     if(a>b) 0 else factorial.factorial(a) + sumfact(a+1,b)
