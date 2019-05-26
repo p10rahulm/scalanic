@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\parallel_tasks.scala:14:31: MyTask.type does not take parameters[0m
-[0m[[0m[31merror[0m] [0m[0m    val tB: MyTask[B] = MyTask(task(cB))[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\scalashop\VerticalBoxBlur.scala:95:74: not found: value task[0m
+[0m[[0m[31merror[0m] [0m[0m    val tasks = (0 until src.width by width_of_each_strip).map(column => task(blur(src,dst,column,column+width_of_each_strip,radius)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mE:\Learn\Scala\src\main\scala\scalashop\VerticalBoxBlur.scala:96:22: value join is not a member of Nothing[0m
+[0m[[0m[31merror[0m] [0m[0m    tasks.map(x => x.join)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

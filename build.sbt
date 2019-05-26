@@ -14,6 +14,7 @@ scalacOptions ++= Seq(
 //  "-Yinline-warnings"
 )
 
+
 fork := true
 
 javaOptions += "-Xmx3G"
@@ -25,9 +26,11 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-swing" % "1.0.1",
   "com.github.scala-blitz" %% "scala-blitz" % "1.1",
   "org.scalactic" %% "scalactic" % "2.2.6",
-  "org.scalatest" %% "scalatest" % "2.2.6" % "test"
-)
+  "org.scalatest" %% "scalatest" % "2.2.6" % "test",
 
+  "org.apache.spark" %% "spark-core" % "2.1.0",
+  "org.apache.spark" %% "spark-sql" % "2.1.0"
+)
 /**
   * Force sbt to use scala 2.11.5,
   * otherwise, some dependence will upgrade scala version to 2.11.7
